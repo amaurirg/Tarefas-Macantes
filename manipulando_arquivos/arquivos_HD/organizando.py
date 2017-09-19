@@ -12,8 +12,8 @@ print('\n\n\nCopiando arquivos e pastas SEM verificar se o diretórios e os arqu
 print('Diretório ou Pasta atual: ', os.getcwd())				#exibe o diretório de trabalho atual.
 os.chdir('C:\\')												#vai para o diretório C:\.
 os.makedirs('C:\\spamPython')									#cria o diretório "delicious" em C:\.
-shutil.copy('C:\\spam.txt', 'C:\\spamPython')					#copia o arquivo "spam.txt" para o diretório C:\delicious com o mesmo nome.
-shutil.copy('C:\\spam.txt', 'C:\\spamPython\\spam2.txt')		#copia o arquivo "spam.txt" para o diretório C:\delicious alterando o nome para "spam2.txt".
+shutil.copy('C:\\spam.txt', 'C:\\spamPython')					#copia o arquivo "spam.txt" para o diretório C:\spam com o mesmo nome.
+shutil.copy('C:\\spam.txt', 'C:\\spamPython\\spam2.txt')		#copia o arquivo "spam.txt" para o diretório C:\spam alterando o nome para "spam2.txt".
 shutil.copytree('C:\\spamPython', 'C:\\spamPython_BACKUP')		#copia a pasta "C:\spamPython" e seus arquivos criando a pasta "C:\spamPython_BACKUP".
 shutil.move('C:\\spam_calc\\calc.exe', 'C:\\spam_calc\\novo_calc.exe')	#renomeia o arquivo "calc.exe" para "novo_calc.exe". Pode-se mover renomeando também.
 shutil.move('C:\\spam_calc', 'C:\\spamPython')							#move a pasta "spam_calc" e seus arquivos para a pasta "C:\spamPyhton".

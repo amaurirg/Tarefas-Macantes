@@ -30,7 +30,7 @@ while not url.endswith('#'):								#o loop será encerrado quando a URL termina
 		res.raise_for_status()									#verifica se ocorreu algum erro.
 
 		#Salva a imagem em ./xkcd.
-		imageFile = open(os.path.join('xkcd', os.path.basename(comicUrl)), 'wb')	#cria uma arquivo em "xkcd" de acordo com seu nome que é o último do path.
+		imageFile = open(os.path.join('xkcd', os.path.basename(comicUrl)), 'wb')	#cria um arquivo em "xkcd" de acordo com seu nome que é o último do path.
 		for chunk in res.iter_content(100000):										#percorre o arquivo em porções de 100.000 bytes.
 			imageFile.write(chunk)													#escreve no arquivo as porções de iter_content.
 		imageFile.close()															#fecha o arquivo.
